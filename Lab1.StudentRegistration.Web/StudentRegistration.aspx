@@ -18,31 +18,49 @@
                     </td>
                     <td>First Name</td>
                     <td>
-                        <asp:TextBox ID="txtfirstName" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtfirstName" runat="server" Width="217px"></asp:TextBox>
 
                     </td>
                     <td>Last Name</td>
                     <td>
-                        <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtLastName" runat="server" Width="168px"></asp:TextBox>
 
                     </td>
 
                 </tr>
 
                 <tr><td>Street</td>
-                    <td> <asp:TextBox ID="txtStreet" runat="server"></asp:TextBox></td>
+                    <td> <asp:TextBox ID="txtStreet" Width="255px" runat="server"></asp:TextBox></td>
 
                     <td>City</td>
-                    <td> <asp:TextBox ID="txtCity" runat="server"></asp:TextBox></td>
+                    <td> <asp:TextBox ID="txtCity" runat="server" Width="255px"></asp:TextBox></td>
 
                     <td>Zip</td>
                     <td> <asp:TextBox ID="txtZip" runat="server"></asp:TextBox></td>
 
                 </tr>
 
+                <tr><td>Phone</td>
+                    <td> <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox></td>
+
+                    <td>Email</td>
+                    <td> <asp:TextBox ID="txtEmail" runat="server" Width="188px"></asp:TextBox></td>
+
+                    <td></td>
+                    <td> </td>
+
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
+                    </td>
+                </tr>
+
             </table>
 
         </div>
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>
